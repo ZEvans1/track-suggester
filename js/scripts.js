@@ -4,10 +4,26 @@ $(document).ready(function() {
     var question3 = $("input:radio[name=option]:checked").val();
     var question4 = $("#q4").val();
     var question5 = $("#q5").val();
+    var track;
 
-    alert(question2);
-    alert(question3);
-    alert(question5);
+    if (question2 === "yes" || question3 === "response1") {
+            var track = "C#/.NET";
+            $("#suggestion").hide();
+            $("#suggestion").show();
+            $("#result").text(track);
+          } else if (question3 === "response2") {
+            var track = "CSS/Design";
+            $("#suggestion").hide();
+            $("#suggestion").show();
+            $("#result").text(track);
+          }
+          else {
+          alert('Please enter your age.');
+        }
+
+    // alert(question2);
+    // alert(question3);
+    // alert(question5);
 
     event.preventDefault();
   });
