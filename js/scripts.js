@@ -69,7 +69,8 @@ $(document).ready(function() {
   });
 });
 
-
+// I was attempting to make sure that every part of the form had to be answered,
+// but I have not successfully implemented this yet.
 // function validateForm() {
 //   var question2 = $("input#q2").val().toLowerCase();
 //     if (question2 === "" || name === "") {
