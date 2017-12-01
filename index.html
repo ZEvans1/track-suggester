@@ -9,9 +9,9 @@
   </head>
   <body>
     <div class="container">
-      <h1></h1>
-      <h2></h2>
-      <p></p>
+      <h1>Welcome!</h1>
+      <h2>This is a simple Epicdous track suggester.</h2>
+      <p>Fill out the questions below, click the button, and find out which track may best suit your interests.</p>
       <form id="quiz">
         <div class="form-group">
           <label for="q1">Do you like solving problems?</label>
@@ -25,19 +25,19 @@
           <label for="q3">Which of the following would you rather pursue?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="chocolate" checked>
+              <input type="radio" name="option" value="response1" checked>
               Developing business software
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="vanilla">
+              <input type="radio" name="option" value="response2">
               Designing and styling pages
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="cookiesandcream">
+              <input type="radio" name="option" value="response3">
               Working on high-performance processing and user interfaces
             </label>
           </div>
@@ -45,21 +45,21 @@
         <div class="form-group">
           <label for="q4">Does the requirement of having to keep learning sound fun to you?</label>
           <select class="form-control" id="q4">
-            <option value="food">I love learning new things.</option>
-            <option value="pizza">I don't want to have to keep up on new material.</option>
-            <option value="pizza">I already finished school. Are you kidding me? </option>
+            <option value="loveit">I love learning new things.</option>
+            <option value="notfun">I don't want to have to keep up on new material.</option>
+            <option value="hateit">I already finished school. Are you kidding me? </option>
           </select>
         </div>
         <div class="form-group">
           <label for="q5">Do you have an idea for the next great app?</label>
           <select class="form-control" id="q5">
-            <option value="food">I have several.</option>
-            <option value="pizza">I would rather work on something else.</option>
+            <option value="several">I have several.</option>
+            <option value="none">I would rather work on something else.</option>
           </select>
         </div>
-        <button type="submit" class="btn">Find my track.</button>
+        <button type="submit" class="btn-primary">Find my track.</button>
       </form>
-      <div id="match">
+      <div id="suggestion">
         <p>Through</p>
       </div>
     </div>
