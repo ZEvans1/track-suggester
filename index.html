@@ -13,14 +13,20 @@
       <h1>Welcome!</h1>
       </div>
       <h2>This is a simple <a href="https://www.epicodus.com/">Epicodus</a> track suggester.</h2>
+      <div class="well">
       <ul>
         <li>Fill out the form below</li>
         <li>Click the button at the bottom of the form</li>
         <li>Find out your suggested track</li>
       </ul>
+      </div>
       <form id="quiz">
         <div class="form-group">
-          <label for="q1">Do you like solving problems?</label>
+          <label for="user">What is your name?</label>
+          <input id="user" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="q1">Why are you interested in coding?</label>
           <input id="q1" class="form-control" type="text">
         </div>
         <div class="form-group">
@@ -63,7 +69,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="q5">Do you have an idea for the next great mobile app?</label>
+          <label for="q5">Do you have an idea for the next "great mobile app"?</label>
           <select class="form-control" id="q5">
             <option value="several">I have several.</option>
             <option value="none">I would rather work on something else.</option>
@@ -72,7 +78,7 @@
         <button type="submit" class="btn-primary">Find my track.</button>
       </form>
       <div class="panel panel-default" id="suggestion">
-        <p>You should consider the <strong><span id="result"></span></strong> track at Epicodus. If you would like more information on this track or if you think you might be interested in a different track, please visit <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">this</a> page.</p>
+        <p>Thanks for taking this quiz, <span id="name"></span>. You should consider the <strong><span id="result"></span></strong> track at Epicodus. If you would like more information on this track or if you think you might be interested in a different track, please visit <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">this</a> page.</p>
         <p id="exception">Although you aren't interested in mobile app development, you could still benefit from learning Java and Javascript.</p>
       </div>
       <div class="panel panel-default" id="recommendation">
