@@ -1,7 +1,8 @@
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     var name = $("input#user").val();
-    var question2 = $("input#q2").val();
+    var question1 = $("input#q1").val();
+    var question2 = $("input#q2").val().toLowerCase();
     var question3 = $("input:radio[name=option]:checked").val();
     var question4 = $("#q4").val();
     var question5 = $("#q5").val();
@@ -61,15 +62,18 @@ $(document).ready(function() {
         $("#exception").show();
         $("#result").text(track);
         $("#name").text(name);
-    }
-    else {
+    } else {
     alert("I couldn't find your match!");
   }
-
-    // alert(question2);
-    // alert(question3);
-    // alert(question5);
-
     event.preventDefault();
   });
 });
+
+
+// function validateForm() {
+//   var question2 = $("input#q2").val().toLowerCase();
+//     if (question2 === "" || name === "") {
+//         alert("Please make sure all questions have been filled out.");
+//         return false;
+//     }
+// }
