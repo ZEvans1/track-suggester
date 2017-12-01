@@ -9,9 +9,15 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
       <h1>Welcome!</h1>
-      <h2>This is a simple <a href="#">Epicodus</a> track suggester.</h2>
-      <p>Fill out the questions below, click the button, and find out which track may best suit your interests.</p>
+      </div>
+      <h2>This is a simple <a href="https://www.epicodus.com/">Epicodus</a> track suggester.</h2>
+      <ul>
+        <li>Fill out the form below</li>
+        <li>Click the button at the bottom of the form</li>
+        <li>Find out your suggested track</li>
+      </ul>
       <form id="quiz">
         <div class="form-group">
           <label for="q1">Do you like solving problems?</label>
@@ -19,7 +25,7 @@
         </div>
         <div class="form-group">
           <label for="q2">Are you interested in working for a large corporation?</label>
-          <input id="q2" class="form-control" placeholder="Please enter: 'yes' or 'no'" type="text">
+          <input id="q2" class="form-control" placeholder="Please enter: yes or no" type="text">
         </div>
         <div class="form-group">
           <label for="q3">Which of the following would you rather pursue?</label>
@@ -65,12 +71,12 @@
         </div>
         <button type="submit" class="btn-primary">Find my track.</button>
       </form>
-      <div id="suggestion">
-        <p>You should consider the <span id="result"></span> track at Epicodus. If you would like more information on this track or you think you might be interested in a different track, please visit <a href="#">this</a> page.</p>
+      <div class="panel panel-default" id="suggestion">
+        <p>You should consider the <strong><span id="result"></span></strong> track at Epicodus. If you would like more information on this track or if you think you might be interested in a different track, please visit <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">this</a> page.</p>
         <p id="exception">Although you aren't interested in mobile app development, you could still benefit from learning Java and Javascript.</p>
       </div>
-      <div id="recommendation">
-        <p>It seems like you might have an aversion to learning. While it's OK to have that opinion, you should know that learning and knowing how to learn is probably the most important element of success in this and many other fields. Please check out this <a href="#">link</a> and reconsider if this is the right choice for you.</p>
+      <div class="panel panel-default" id="recommendation">
+        <p>It seems like you might have an aversion to learning. While it's OK to have that opinion, you should know that learning and knowing how to learn is probably the most important element of success in this and many other fields. Please check out this <a href="https://www.learnhowtoprogram.com/intro-to-programming/getting-started-at-epicodus-64627971-b5be-49e7-a8d7-7ca55d0c9e88/growth-mindset">link</a> and reconsider if this is the right choice for you.</p>
       </div>
     </div>
   </body>

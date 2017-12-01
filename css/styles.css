@@ -1,11 +1,35 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+body {
+  background-color: #eaf9f9;
+  font-size: 18px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
 #suggestion {
   display: none;
+  background-color: #d9fcf4;
 }
 
 #recommendation {
   display: none;
+  background-color: #fbfcd9;
 }
 
 #exception {
   display: none;
+}
+
+#quiz {
+  background-color: #56efea;
 }

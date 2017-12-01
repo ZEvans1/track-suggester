@@ -1,4 +1,4 @@
-# _Epicdous Track Suggester_
+# _Epicodus Track Suggester_
 
 #### _An track suggestion page for week 2 @ Epicodus, Dec. 1, 2017_
 
