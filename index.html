@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <h1>Welcome!</h1>
-      <h2>This is a simple Epicdous track suggester.</h2>
+      <h2>This is a simple <a href="#">Epicodus</a> track suggester.</h2>
       <p>Fill out the questions below, click the button, and find out which track may best suit your interests.</p>
       <form id="quiz">
         <div class="form-group">
@@ -41,6 +41,12 @@
               Working on high-performance processing and user interfaces
             </label>
           </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="option" value="response4">
+              Focusing on interactive web applications.
+            </label>
+          </div>
         </div>
         <div class="form-group">
           <label for="q4">Does the requirement of continuous learning sound fun to you?</label>
@@ -51,7 +57,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="q5">Do you have an idea for the next great app?</label>
+          <label for="q5">Do you have an idea for the next great mobile app?</label>
           <select class="form-control" id="q5">
             <option value="several">I have several.</option>
             <option value="none">I would rather work on something else.</option>
@@ -60,7 +66,11 @@
         <button type="submit" class="btn-primary">Find my track.</button>
       </form>
       <div id="suggestion">
-        <p>You should consider the <span id="result"></span> track at Epicodus.</p>
+        <p>You should consider the <span id="result"></span> track at Epicodus. If you would like more information on this track or you think you might be interested in a different track, please visit <a href="#">this</a> page.</p>
+        <p id="exception">Although you aren't interested in mobile app development, you could still benefit from learning Java and Javascript.</p>
+      </div>
+      <div id="recommendation">
+        <p>It seems like you might have an aversion to learning. While it's OK to have that opinion, you should know that learning and knowing how to learn is probably the most important element of success in this and many other fields. Please check out this <a href="#">link</a> and reconsider if this is the right choice for you.</p>
       </div>
     </div>
   </body>

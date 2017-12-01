@@ -1,3 +1,11 @@
 #suggestion {
   display: none;
 }
+
+#recommendation {
+  display: none;
+}
+
+#exception {
+  display: none;
+}
