@@ -1,6 +1,6 @@
 # _Epicodus Track Suggester_
 
-#### _An track suggestion page for week 2 @ Epicodus, Dec. 1, 2017_
+#### _A track suggestion page for week 2 @ Epicodus, Dec. 1, 2017_
 
 #### By _**Zach Evans**_
 
